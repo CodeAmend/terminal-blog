@@ -22,13 +22,17 @@ class Menu(object):
 
 
     def run_menu(self):
-        # User read or write a blog?
-        # if read:
+        read_or_write = input("Do you want to read (R) or write (W)? ")
+        if read_or_write == 'R':
             # list blogs in database
             # allow user to pick one
             # display posts
-        # if write:
+            pass
+        if read_or_write == 'W':
             # check if user has blog
             # if yes promt to write a post
             # if not then promt to create a blog
+            pass
         pass
+
+
