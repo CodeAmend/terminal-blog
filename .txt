@@ -1,0 +1,47 @@
+commit 1a8922ff8fa176d4db09337623f6c5cba7ecae31
+tree a37f0996b2ea5e250eea281817cc062addde72a5
+author CodeAmend <CodeAmend@Gmail.Com> 1452543352 -0500
+committer CodeAmend <CodeAmend@Gmail.Com> 1452543352 -0500
+
+    initial commit
+
+diff --git a/app.py b/app.py
+new file mode 100644
+index 0000000..a027419
+--- /dev/null
++++ b/app.py
+@@ -0,0 +1,10 @@
++import pymongo
++
++uri = "mongodb://127.0.0.1:27017"
++client = pymongo.MongoClient(uri)
++database = client['fullstack']
++collection = database['students']
++
++studentList = [stud['name'] for stud in collection.find({})]
++
++print(studentList)
+\ No newline at end of file
+diff --git a/models/Post.py b/models/Post.py
+new file mode 100644
+index 0000000..e09e0e5
+--- /dev/null
++++ b/models/Post.py
+@@ -0,0 +1,5 @@
++class Post:
++
++    def __init__(self):
++        self.title = "This is my title"
++        
+\ No newline at end of file
+diff --git a/models/__init__.py b/models/__init__.py
+new file mode 100644
+index 0000000..e69de29
+diff --git a/requirements.txt b/requirements.txt
+new file mode 100644
+index 0000000..07451c0
+--- /dev/null
++++ b/requirements.txt
+@@ -0,0 +1 @@
++pymongo=3.0.*
+\ No newline at end of file
