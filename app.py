@@ -9,11 +9,14 @@ blog = Blog(author="Bruce Bros",
             title="Blog of choice",
             description="Just one great article after another")
 
-blog.new_post()
 
+#new_post() asks us for information for new post. Creates post object and saves it with blog_id
+blog.new_post()
+#saves blog information to mongo
 blog.save_to_mongo()
 
-blog_data = Blog.from_mongo(blog.id)
+
+#blog_data = Blog.from_mongo(blog.id)
 
 print(blog.get_posts())
 

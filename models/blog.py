@@ -19,6 +19,7 @@ class Blog(object):
             date = datetime.datetime.utcnow()
         else:
             date = datetime.datetime.strptime(date, "%d%m%Y")
+        #creates post object and then saves it.
         post = Post(blog_id=self.id,
                     title=title,
                     content=content,
