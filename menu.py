@@ -2,7 +2,7 @@
 class Menu(object):
 
     def __init__(self):
-        # ask for author name
+        self.user = input("What is the author name? ")
         # if author has account run
         pass
 
