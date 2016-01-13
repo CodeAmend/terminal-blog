@@ -3,7 +3,12 @@ class Menu(object):
 
     def __init__(self):
         self.user = input("What is the author name? ")
+        if self._author_exists():
+            pass
         # if author has account run
+        pass
+
+    def _author_exists(self):
         pass
 
     def run_menu(self):
