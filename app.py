@@ -6,5 +6,17 @@ __author__ = 'jslvtr'
 
 Database.initialize()
 
-Menu()
+# Menu()
+
+#
+# author = input("Enter Author: ")
+# title = input("Enter Title: ")
+# description = input("Enter Description: ")
+#
+# blog = Blog(author, title, description)
+#
+# blog.new_post()
+#
+# blog.save_to_mongo()
+
 
