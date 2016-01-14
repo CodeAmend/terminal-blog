@@ -17,11 +17,10 @@ class Menu(object):
 
     #may be made static. Why?
     def _create_new_account(self):
-        author = input("What is the author name? ")
         title = input("Title of the blog? ")
         description = input("Description of the blog? ")
-        blog = Blog(author, title, description)
-        blog.new_post()
+        blog = Blog(self.user, title, description)
+        # no need to create new_post() because we are essentially creating a new account.
         blog.save_to_mongo()
 
     def run_menu(self):
